@@ -4,133 +4,277 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#050608">
-  <meta name="description" content="BuildReFix — datoru remonts, IT atbalsts un tehniskie risinājumi privātpersonām un uzņēmumiem Rīgā un attālināti visā Latvijā.">
-  <title>BuildReFix — IT atbalsts un datoru remonts Latvijā</title>
+  <meta name="description" content="BuildReFix — datoru remonts, IT atbalsts, mājaslapu labošana un biznesa sistēmas Rīgā un attālināti visā Latvijā.">
+  <title>BuildReFix — IT atbalsts un mājaslapu risinājumi</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Pāriet uz saturu</a>
+  <a class="skip-link" href="#main" data-i18n="skipLink">Pāriet uz saturu</a>
+
   <header class="site-header">
     <a class="brand" href="#top" aria-label="BuildReFix sākumlapa">
       <img src="buildrefix-logo.png" alt="" width="44" height="44">
       <span>BUILD<span>REFIX</span></span>
     </a>
-    <nav aria-label="Galvenā navigācija">
-      <a href="#services" data-i18n="navServices">Pakalpojumi</a>
-      <a href="#business" data-i18n="navBusiness">Uzņēmumiem</a>
-      <a href="#process" data-i18n="navProcess">Kā tas notiek</a>
+    <nav class="main-nav" id="main-nav" aria-label="Galvenā navigācija">
+      <a href="#it-support" data-i18n="navIT">IT atbalsts</a>
+      <a href="#digital-services" data-i18n="navDigital">Mājaslapas</a>
+      <a href="#work" data-i18n="navWork">Darbi</a>
+      <a href="#faq" data-i18n="navFaq">BUJ</a>
       <a href="#contact" data-i18n="navContact">Kontakti</a>
     </nav>
     <div class="header-actions">
-      <button class="lang-switch" type="button" aria-label="Switch to English" aria-pressed="false">EN</button>
-      <a class="button button-small" href="mailto:info.buildrefix@gmail.com?subject=BuildReFix%20pakalpojuma%20pieprasījums" data-i18n="headerCta">Aprakstīt problēmu</a>
+      <div class="language-picker" role="group" aria-label="Valoda">
+        <button type="button" data-lang="lv" aria-pressed="true">LV</button>
+        <button type="button" data-lang="ru" aria-pressed="false">RU</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <button class="menu-toggle" type="button" aria-controls="main-nav" aria-expanded="false">
+        <span></span><span></span><span></span><span class="sr-only" data-i18n="menu">Izvēlne</span>
+      </button>
+      <a class="button button-small header-cta" href="#contact" data-i18n="headerCta">Aprakstīt uzdevumu</a>
     </div>
   </header>
 
   <main id="main">
     <section class="hero" id="top">
       <div class="hero-copy">
-        <p class="eyebrow"><span></span><span data-i18n="eyebrow">Rīga · Izbraukums · Attālināti visā Latvijā</span></p>
-        <h1 data-i18n="heroTitle">Tehnika strādā.<br><em>Jūs turpināt darbu.</em></h1>
-        <p class="hero-lead" data-i18n="heroLead">Datoru remonts, IT atbalsts un praktiski tehniskie risinājumi mājām un mazajiem uzņēmumiem — bez neskaidriem terminiem un liekām izmaksām.</p>
-        <div class="hero-actions">
-          <a class="button" href="mailto:info.buildrefix@gmail.com?subject=BuildReFix%20pakalpojuma%20pieprasījums" data-i18n="heroCta">Saņemt sākotnējo novērtējumu</a>
-          <a class="text-link" href="#services"><span data-i18n="viewServices">Skatīt pakalpojumus</span> <span aria-hidden="true">↓</span></a>
+        <p class="eyebrow"><span></span><span data-i18n="eyebrow">Rīga · Vakari un nedēļas nogales · Attālināti visā Latvijā</span></p>
+        <h1 data-i18n="heroTitle">Salaboju tehniskas problēmas.<br><em>Uzbūvēju praktiskus risinājumus.</em></h1>
+        <p class="hero-lead" data-i18n="heroLead">Palīdzu privātpersonām un maziem uzņēmumiem ar datoriem, IT vidi, mājaslapām un klientu pieteikumu uzskaiti. Vispirms nosakām problēmu, tad fiksējam darba apjomu un cenu.</p>
+        <div class="path-actions">
+          <a class="path-card" href="#it-support">
+            <span class="path-no">01</span>
+            <strong data-i18n="pathIT">Datori un IT atbalsts</strong>
+            <span aria-hidden="true">↓</span>
+          </a>
+          <a class="path-card" href="#digital-services">
+            <span class="path-no">02</span>
+            <strong data-i18n="pathDigital">Mājaslapas un biznesa sistēmas</strong>
+            <span aria-hidden="true">↓</span>
+          </a>
         </div>
-        <ul class="trust-list" aria-label="Service benefits">
-          <li><span>01</span><span data-i18n="trustOne">Skaidra diagnostika pirms remonta</span></li>
-          <li><span>02</span><span data-i18n="trustTwo">Datu un privātuma aizsardzība</span></li>
-          <li><span>03</span><span data-i18n="trustThree">LV · RU · EN atbalsts</span></li>
+        <ul class="trust-list" aria-label="Pakalpojumu priekšrocības">
+          <li><span>01</span><span data-i18n="trustOne">Saskaņota cena pirms darba</span></li>
+          <li><span>02</span><span data-i18n="trustTwo">Versiju kontrole un nodošana</span></li>
+          <li><span>03</span><span data-i18n="trustThree">Saziņa LV · RU · EN</span></li>
         </ul>
       </div>
-      <div class="hero-panel" aria-label="BuildReFix service status">
-        <div class="panel-top"><span data-i18n="panelLabel">SERVISA STATUSS</span><span class="status"><i></i><span data-i18n="available">PIEEJAMS</span></span></div>
+      <div class="hero-panel" aria-label="BuildReFix">
+        <div class="panel-top"><span>BUILD / REPAIR / SUPPORT</span><span class="status"><i></i><span data-i18n="availabilityShort">PIEEJAMS PĒC VIENOŠANĀS</span></span></div>
         <div class="diagnostic-display">
           <div class="logo-orbit" aria-hidden="true"><span></span><span></span></div>
-          <img class="hero-logo" src="buildrefix-logo.png" width="352" height="352" alt="Build ReFix — technical repairs and IT support">
-          <span class="terminal-prompt">BUILD / REPAIR / SUPPORT</span>
-          <strong data-i18n="panelTitle">Problēma nav jāmin.<br>To var diagnosticēt.</strong>
+          <img class="hero-logo" src="buildrefix-logo.png" width="352" height="352" alt="BuildReFix">
+          <div class="panel-message">
+            <span class="terminal-prompt">buildrefix://riga</span>
+            <strong data-i18n="panelTitle">Viena kontaktpersona.<br>Konkrēts rezultāts.</strong>
+          </div>
         </div>
         <dl class="response-stats">
-          <div><dt data-i18n="response">Atbilde</dt><dd data-i18n="responseValue">darba dienā</dd></div>
+          <div><dt data-i18n="response">Atbilde</dt><dd data-i18n="responseValue">parasti vienas darba dienas laikā</dd></div>
           <div><dt data-i18n="coverage">Darba zona</dt><dd data-i18n="coverageValue">Rīga + attālināti</dd></div>
         </dl>
       </div>
     </section>
 
-    <section class="section" id="services">
+    <section class="section" id="it-support">
       <div class="section-heading">
-        <p class="section-index">01 / <span data-i18n="servicesIndex">PAKALPOJUMI</span></p>
-        <div><h2 data-i18n="servicesTitle">Remonts un atbalsts bez minējumiem</h2><p data-i18n="servicesLead">Vispirms nosakām cēloni. Tad saskaņojam risinājumu, cenu un termiņu.</p></div>
+        <p class="section-index">01 / <span data-i18n="itIndex">DATORI UN IT</span></p>
+        <div>
+          <h2 data-i18n="itTitle">Atbalsts mājām un mazam uzņēmumam</h2>
+          <p data-i18n="itLead">Diagnostika pirms remonta. Papildu darbs, detaļas un izbraukums ārpus Rīgas tiek saskaņots atsevišķi.</p>
+        </div>
       </div>
       <div class="service-grid">
         <article class="service-card featured">
-          <span class="service-no">01</span><div class="service-icon" aria-hidden="true">DX</div>
-          <h3 data-i18n="s1Title">Datoru diagnostika un remonts</h3>
-          <p data-i18n="s1Text">Lēna darbība, kļūdas, pārkaršana, vīrusi, Windows problēmas un nestabila aparatūra.</p>
-          <span class="price" data-i18n="s1Price">Diagnostika no €20</span>
+          <span class="service-no">DX / 01</span>
+          <h3 data-i18n="s1Title">Datoru diagnostika</h3>
+          <p data-i18n="s1Text">Lēna darbība, kļūdas, pārkaršana, vīrusi, Windows un aparatūras problēmas.</p>
+          <ul><li data-i18n="s1Scope">Sākotnējā pārbaude līdz 30 minūtēm</li><li data-i18n="s1Exclude">Remonts un detaļas nav iekļautas</li></ul>
+          <span class="price" data-i18n="s1Price">No €20</span>
         </article>
         <article class="service-card">
-          <span class="service-no">02</span><div class="service-icon" aria-hidden="true">RM</div>
+          <span class="service-no">RM / 02</span>
           <h3 data-i18n="s2Title">Attālināts IT atbalsts</h3>
-          <p data-i18n="s2Text">Ātra palīdzība programmatūrai, e-pastam, kontiem, printeriem un ikdienas darba traucējumiem.</p>
+          <p data-i18n="s2Text">Palīdzība ar programmām, e-pastu, kontiem, printeriem un ikdienas darba traucējumiem.</p>
+          <ul><li data-i18n="s2Scope">Viena sesija līdz 30 minūtēm</li><li data-i18n="s2Exclude">Papildu laiks tikai pēc saskaņošanas</li></ul>
           <span class="price" data-i18n="s2Price">No €20 / sesija</span>
         </article>
         <article class="service-card">
-          <span class="service-no">03</span><div class="service-icon" aria-hidden="true">HW</div>
+          <span class="service-no">HW / 03</span>
           <h3 data-i18n="s3Title">Uzlabojumi un komplektēšana</h3>
           <p data-i18n="s3Text">SSD, RAM, komponentu nomaiņa un datoru komplektēšana darbam, mācībām vai spēlēm.</p>
+          <ul><li data-i18n="s3Scope">Viena standarta komponenta uzstādīšana</li><li data-i18n="s3Exclude">Detaļas un licences nav iekļautas</li></ul>
           <span class="price" data-i18n="s3Price">Darbs no €25</span>
         </article>
         <article class="service-card">
-          <span class="service-no">04</span><div class="service-icon" aria-hidden="true">NW</div>
-          <h3 data-i18n="s4Title">Tīkli un darba vietas</h3>
-          <p data-i18n="s4Text">Wi‑Fi, maršrutētāji, printeri, rezerves kopijas un droša darba vietas uzstādīšana.</p>
-          <span class="price" data-i18n="s4Price">Izbraukums no €35</span>
+          <span class="service-no">NW / 04</span>
+          <h3 data-i18n="s4Title">Izbraukums Rīgā</h3>
+          <p data-i18n="s4Text">Wi-Fi, maršrutētāji, printeri, rezerves kopijas un darba vietas sagatavošana.</p>
+          <ul><li data-i18n="s4Scope">Ierašanās un diagnostika līdz 30 minūtēm</li><li data-i18n="s4Exclude">Darbs pēc diagnostikas tiek saskaņots atsevišķi</li></ul>
+          <span class="price" data-i18n="s4Price">No €35</span>
         </article>
       </div>
-      <p class="price-note" data-i18n="priceNote">Norādītas sākuma cenas. Gala cena tiek saskaņota pēc problēmas novērtēšanas; detaļas cenā nav iekļautas.</p>
-    </section>
-
-    <section class="business" id="business">
-      <div class="business-copy">
-        <p class="section-index light">02 / <span data-i18n="businessIndex">UZŅĒMUMIEM</span></p>
-        <h2 data-i18n="businessTitle">IT atbalsts mazam uzņēmumam — bez pilna laika IT nodaļas</h2>
-        <p data-i18n="businessLead">Palīdzība ar darba vietām, piekļuvi, Microsoft 365, tīkliem un tehniskām problēmām. Vienreizējs uzdevums vai regulārs atbalsts pēc vienošanās.</p>
-        <a class="button button-light" href="mailto:info.buildrefix@gmail.com?subject=BuildReFix%20B2B%20IT%20atbalsts" data-i18n="businessCta">Apspriest uzņēmuma vajadzības</a>
+      <div class="service-cta-row">
+        <p data-i18n="itPrompt">Pieprasījumā norādiet ierīci, simptomus, atrašanās vietu un vēlamo termiņu.</p>
+        <a class="text-button" data-mail-key="it" href="mailto:info.buildrefix@gmail.com" data-i18n="itCta">Pieprasīt IT palīdzību →</a>
       </div>
-      <ul class="business-list">
-        <li><span>01</span><div><strong data-i18n="b1Title">Darba vietu sagatavošana</strong><p data-i18n="b1Text">Datori, konti, programmas, printeri un piekļuves jaunam darbiniekam.</p></div></li>
-        <li><span>02</span><div><strong data-i18n="b2Title">Microsoft 365 un mākoņpakalpojumi</strong><p data-i18n="b2Text">E-pasts, lietotāji, drošība, koplietošana un ikdienas administrēšana.</p></div></li>
-        <li><span>03</span><div><strong data-i18n="b3Title">Incidenti un profilakse</strong><p data-i18n="b3Text">Problēmu novēršana, rezerves kopijas, atjauninājumi un pamata drošība.</p></div></li>
-      </ul>
     </section>
 
-    <section class="section process" id="process">
+    <section class="digital-services" id="digital-services">
+      <div class="digital-intro">
+        <p class="section-index light">02 / <span data-i18n="digitalIndex">MĀJASLAPAS UN SISTĒMAS</span></p>
+        <h2 data-i18n="digitalTitle">Trīs fiksēta apjoma pakalpojumi</h2>
+        <p data-i18n="digitalLead">Paredzami termiņi, viena revīzija un skaidri izņēmumi. Darbs sākas pēc piekļuves, materiālu un pirmā maksājuma saņemšanas.</p>
+      </div>
+      <div class="package-grid">
+        <article class="package-card">
+          <div class="package-head"><span data-i18n="pkg1Tag">ESOŠAI MĀJASLAPAI</span><strong>€250</strong></div>
+          <h3 data-i18n="pkg1Title">Mājaslapas remonts</h3>
+          <p data-i18n="pkg1Lead">Līdz trim iepriekš saskaņotiem nelieliem defektiem vienā esošā mājaslapā.</p>
+          <ul>
+            <li data-i18n="pkg1I1">Maksimums 4 darba stundas</li>
+            <li data-i18n="pkg1I2">Pārbaude un īsa nodošana</li>
+            <li data-i18n="pkg1I3">1 revīzija saskaņotajā apjomā</li>
+            <li data-i18n="pkg1I4">Līdz 2 darba dienām</li>
+          </ul>
+          <p class="exclusions" data-i18n="pkg1Ex">Neietver pilnu pārbūvi, ļaunprogrammatūras tīrīšanu, nezināmas spraudņu kļūdas vai infrastruktūras incidentus.</p>
+          <div class="payment"><span data-i18n="deposit">Maksājumi</span><b data-i18n="pkg1Pay">€125 sākumā · €125 pēc demonstrācijas</b></div>
+          <a class="button" data-mail-key="repair" href="mailto:info.buildrefix@gmail.com" data-i18n="pkg1Cta">Aprakstīt labojumus</a>
+        </article>
+
+        <article class="package-card accent">
+          <div class="package-head"><span data-i18n="pkg2Tag">PIETEIKUMU PLŪSMA</span><strong>€500</strong></div>
+          <h3 data-i18n="pkg2Title">Pieteikumu sistēma</h3>
+          <p data-i18n="pkg2Lead">Viena pieteikuma plūsma un klientam piederošs potenciālo klientu reģistrs.</p>
+          <ul>
+            <li data-i18n="pkg2I1">5 statusi un nākamā kontakta lauks</li>
+            <li data-i18n="pkg2I2">Atkārtoti izmantojamas piedāvājumu ziņas</li>
+            <li data-i18n="pkg2I3">30 minūšu nodošana un 1 revīzija</li>
+            <li data-i18n="pkg2I4">Maksimums 8 h · līdz 4 darba dienām</li>
+          </ul>
+          <p class="exclusions" data-i18n="pkg2Ex">Neietver maksas integrācijas, automatizētu ziņapmaiņu, sensitīvu datu apstrādi vai lielus importus.</p>
+          <div class="payment"><span data-i18n="deposit">Maksājumi</span><b data-i18n="pkg2Pay">€250 sākumā · €250 pie nodošanas</b></div>
+          <a class="button button-violet" data-mail-key="enquiry" href="mailto:info.buildrefix@gmail.com" data-i18n="pkg2Cta">Apspriest pieteikumu plūsmu</a>
+        </article>
+
+        <article class="package-card">
+          <div class="package-head"><span data-i18n="pkg3Tag">JAUNAI KLĀTBŪTNEI</span><strong>€750</strong></div>
+          <h3 data-i18n="pkg3Title">Mazā uzņēmuma mājaslapa</h3>
+          <p data-i18n="pkg3Lead">Viena lapa līdz piecām sadaļām, viena valoda un klienta esošie zīmola materiāli.</p>
+          <ul>
+            <li data-i18n="pkg3I1">Pakalpojumi un kontaktu ceļi</li>
+            <li data-i18n="pkg3I2">Mobilā versija un izvietošana</li>
+            <li data-i18n="pkg3I3">1 revīzija saskaņotajā apjomā</li>
+            <li data-i18n="pkg3I4">Maksimums 12 h · līdz 5 darba dienām</li>
+          </ul>
+          <p class="exclusions" data-i18n="pkg3Ex">Domēns, maksas hostings, papildu valodas, administrācija, e-komercija un rezervācija tiek vērtēta atsevišķi.</p>
+          <div class="payment"><span data-i18n="deposit">Maksājumi</span><b data-i18n="pkg3Pay">€375 sākumā · €375 pēc pieņemšanas</b></div>
+          <a class="button" data-mail-key="website" href="mailto:info.buildrefix@gmail.com" data-i18n="pkg3Cta">Pieprasīt mājaslapas piedāvājumu</a>
+        </article>
+      </div>
+      <p class="tax-note" data-i18n="taxNote">Pirms darba sākuma rakstiskajā piedāvājumā tiek apstiprināta gala summa, darba apjoms un piemērojamais nodokļu režīms. Nepieciešamos maksas trešo pušu pakalpojumus klients iegādājas tieši.</p>
+    </section>
+
+    <section class="section work" id="work">
       <div class="section-heading">
-        <p class="section-index">03 / <span data-i18n="processIndex">DARBA PROCESS</span></p>
-        <div><h2 data-i18n="processTitle">No problēmas līdz risinājumam</h2><p data-i18n="processLead">Jūs zināt, kas notiks, pirms sākas apmaksāts darbs.</p></div>
+        <p class="section-index">03 / <span data-i18n="workIndex">DARBU PIEMĒRI</span></p>
+        <div>
+          <h2 data-i18n="workTitle">Funkcionējoši piemēri ar skaidru statusu</h2>
+          <p data-i18n="workLead">Publiski apskatāmi darbi. Demo un prototipi nav norādīti kā pabeigti klientu projekti.</p>
+        </div>
       </div>
-      <ol class="steps">
-        <li><span>01</span><h3 data-i18n="p1Title">Aprakstiet situāciju</h3><p data-i18n="p1Text">Norādiet ierīci, simptomus, atrašanās vietu un vēlamo termiņu.</p></li>
-        <li><span>02</span><h3 data-i18n="p2Title">Saņemiet novērtējumu</h3><p data-i18n="p2Text">Precizēsim iespējamo cēloni, darba formu un sākotnējās izmaksas.</p></li>
-        <li><span>03</span><h3 data-i18n="p3Title">Saskaņojiet darbu</h3><p data-i18n="p3Text">Remonts sākas tikai pēc apjoma un cenas apstiprināšanas.</p></li>
-        <li><span>04</span><h3 data-i18n="p4Title">Saņemiet rezultātu</h3><p data-i18n="p4Text">Pārbaudīts risinājums un skaidrs paveiktā darba kopsavilkums.</p></li>
-      </ol>
+      <div class="work-list">
+        <article class="work-card">
+          <div class="live-preview"><iframe src="https://romanmamrukov.github.io/dar-motors/" title="D.A.R. Motors demo preview" loading="lazy" tabindex="-1"></iframe></div>
+          <div class="work-copy">
+            <span class="project-status demo" data-i18n="statusDemo">FUNKCIONĀLS DEMO · TESTA DATI</span>
+            <h3>D.A.R. Motors</h3>
+            <p data-i18n="work1Text">Auto pārdošanas un servisa platformas prototips ar automašīnu katalogu, detaļu sadaļu, LV/RU/EN interfeisu un administrēšanas plūsmu.</p>
+            <p class="problem"><b data-i18n="problemLabel">Atrisinātais uzdevums:</b> <span data-i18n="work1Problem">strukturēta transportlīdzekļu publicēšana ar foto, aprakstu un pircēja kontaktu ceļu.</span></p>
+            <a href="https://romanmamrukov.github.io/dar-motors/" target="_blank" rel="noopener" data-i18n="openExample">Atvērt piemēru ↗</a>
+          </div>
+        </article>
+        <article class="work-card">
+          <div class="live-preview"><iframe src="https://romanmamrukov.github.io/work-to-income/" title="Work-to-Income prototype preview" loading="lazy" tabindex="-1"></iframe></div>
+          <div class="work-copy">
+            <span class="project-status prototype" data-i18n="statusPrototype">AKTĪVS PRODUKTA PROTOTIPS</span>
+            <h3>Work-to-Income</h3>
+            <p data-i18n="work2Text">Pārlūkā strādājošs darba un rēķinu rīks ar uzdevumiem, klientiem, melnrakstiem, priekšskatījumu un datu eksportu.</p>
+            <p class="problem"><b data-i18n="problemLabel">Atrisinātais uzdevums:</b> <span data-i18n="work2Problem">mazam pakalpojumu sniedzējam nav jāuztur serveris, lai pārvaldītu darbu un sagatavotu rēķinus.</span></p>
+            <a href="https://romanmamrukov.github.io/work-to-income/" target="_blank" rel="noopener" data-i18n="openExample">Atvērt piemēru ↗</a>
+          </div>
+        </article>
+        <article class="work-card">
+          <div class="live-preview current-site"><img src="buildrefix-logo.png" alt="BuildReFix logo" width="352" height="352"><span>BUILD / REPAIR / SUPPORT</span></div>
+          <div class="work-copy">
+            <span class="project-status live" data-i18n="statusLive">DZĪVA PAKALPOJUMU MĀJASLAPA</span>
+            <h3>BuildReFix</h3>
+            <p data-i18n="work3Text">Ātra statiska mājaslapa bez maksas servera, ar LV/RU/EN saturu, skaidriem pakalpojumu ceļiem un tiešu saziņu.</p>
+            <p class="problem"><b data-i18n="problemLabel">Atrisinātais uzdevums:</b> <span data-i18n="work3Problem">apvienot tehnisko remontu un digitālos pakalpojumus vienā saprotamā piedāvājumā Latvijas tirgum.</span></p>
+            <a href="https://github.com/romanMamrukov/buildrefix" target="_blank" rel="noopener" data-i18n="viewSource">Apskatīt avotu ↗</a>
+          </div>
+        </article>
+      </div>
+      <a class="portfolio-link" href="https://romanmamrukov.github.io/romanmamrukov/" target="_blank" rel="noopener"><span data-i18n="portfolioLink">Profesionālais portfolio un pieredze</span><span aria-hidden="true">↗</span></a>
+    </section>
+
+    <section class="availability">
+      <div>
+        <p class="section-index light">04 / <span data-i18n="availabilityIndex">PIEEJAMĪBA</span></p>
+        <h2 data-i18n="availabilityTitle">Plānots darbs, nevis 24/7 dežūra</h2>
+      </div>
+      <div>
+        <p data-i18n="availabilityText">Darbi tiek plānoti vakaros un nedēļas nogalēs. Uz pieprasījumiem parasti atbildu vienas darba dienas laikā. BuildReFix nenodrošina diennakts incidentu apkalpošanu vai garantētu avārijas reakcijas laiku.</p>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="section-heading">
+        <p class="section-index">05 / <span data-i18n="faqIndex">BUJ</span></p>
+        <div><h2 data-i18n="faqTitle">Pirms darba sākuma</h2></div>
+      </div>
+      <div class="faq-list">
+        <details><summary data-i18n="faq1Q">Kā notiek maksājumi?</summary><p data-i18n="faq1A">Fiksētajiem digitālajiem pakalpojumiem pirmais maksājums rezervē darbu, atlikums jāmaksā pēc demonstrācijas vai pieņemtas nodošanas. Pirms apmaksas saņemsiet rakstisku apjomu, cenu un maksājuma informāciju.</p></details>
+        <details><summary data-i18n="faq2Q">Kas nepieciešams no klienta?</summary><p data-i18n="faq2A">Problēmas apraksts, lēmuma pieņēmējs, droša piekļuve un nepieciešamais saturs. Mājaslapai vajadzīgi arī zīmola materiāli un fotogrāfijas. Piekļuve tiek prasīta tikai tam, kas nepieciešams darbam.</p></details>
+        <details><summary data-i18n="faq3Q">Vai būs papildu ikmēneša izmaksas?</summary><p data-i18n="faq3A">Ne automātiski. Vispirms izmantojam piemērotus klientam piederošus rīkus un pārbaudām bezmaksas plānu ierobežojumus. Domēnu, hostingu vai citus maksas pakalpojumus klients apstiprina un iegādājas tieši.</p></details>
+        <details><summary data-i18n="faq4Q">Kam pieder gala rezultāts?</summary><p data-i18n="faq4A">Pēc pilnas apmaksas klientam tiek nodoti saskaņotie darba faili un piekļuve. Trešo pušu rīkiem saglabājas to licences noteikumi.</p></details>
+        <details><summary data-i18n="faq5Q">Cik revīziju ir iekļauts?</summary><p data-i18n="faq5A">Fiksētajos pakalpojumos iekļauta viena revīzija iepriekš saskaņotajā apjomā. Jaunas funkcijas vai virziena maiņa tiek vērtēta atsevišķi.</p></details>
+        <details><summary data-i18n="faq6Q">Kā notiek nodošana?</summary><p data-i18n="faq6A">Pārbaudām saskaņotos pieņemšanas kritērijus, parādu rezultātu un nododu īsu instrukciju. Nevajadzīgā pagaidu piekļuve pēc nodošanas tiek noņemta.</p></details>
+      </div>
     </section>
 
     <section class="contact" id="contact">
-      <p class="section-index light">04 / <span data-i18n="contactIndex">KONTAKTI</span></p>
+      <p class="section-index">06 / <span data-i18n="contactIndex">KONTAKTI</span></p>
       <div class="contact-main">
-        <div><h2 data-i18n="contactTitle">Aprakstiet problēmu.<br>Atbildēšu ar nākamo soli.</h2><p data-i18n="contactLead">Pievienojiet foto vai ekrānuzņēmumu, ja tas palīdz parādīt kļūdu.</p></div>
-        <a class="email-link" href="mailto:info.buildrefix@gmail.com?subject=BuildReFix%20pakalpojuma%20pieprasījums">info.buildrefix@gmail.com <span aria-hidden="true">↗</span></a>
+        <div>
+          <h2 data-i18n="contactTitle">Aprakstiet konkrēto problēmu.</h2>
+          <p data-i18n="contactLead">Bezmaksas sākotnējais novērtējums ir īss: līdz 15 minūtēm un trīs galvenie novērojumi. Pēc tam piedāvāju nākamo soli vai pasaku, ja pakalpojums nav piemērots.</p>
+        </div>
+        <div class="contact-links">
+          <a class="email-link" data-mail-key="general" href="mailto:info.buildrefix@gmail.com">info.buildrefix@gmail.com <span aria-hidden="true">↗</span></a>
+          <a class="channel-link" href="https://wa.me/37126626578" target="_blank" rel="noopener"><span>WhatsApp</span><span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="contact-prompts">
+        <span data-i18n="contactPrompt1">IT: ierīce, simptomi, vieta, termiņš</span>
+        <span data-i18n="contactPrompt2">Mājaslapa: adrese, problēma, platforma, termiņš</span>
       </div>
       <div class="contact-meta"><span>RĪGA, LATVIJA</span><span data-i18n="remote">ATTĀLINĀTI VISĀ LATVIJĀ</span><span>LV · RU · EN</span></div>
     </section>
+
+    <section class="privacy" id="privacy">
+      <h2 data-i18n="privacyTitle">Privātums un saziņa</h2>
+      <p data-i18n="privacyText">Šajā mājaslapā nav kontaktformas, analītikas vai reklāmas sīkdatņu. Valodas izvēle tiek saglabāta tikai jūsu pārlūkā. Sazinoties ar e-pastu vai WhatsApp, dati tiek apstrādāti attiecīgajā pakalpojumā tikai, lai atbildētu uz pieprasījumu un sagatavotu darbu. Nesūtiet paroles; piekļuvi saskaņojam atsevišķi.</p>
+    </section>
   </main>
 
-  <footer><a class="brand footer-brand" href="#top"><img src="buildrefix-logo.png" alt="" width="40" height="40"><span>BUILD<span>REFIX</span></span></a><p>© <span id="year"></span> BuildReFix</p><a href="mailto:info.buildrefix@gmail.com" data-i18n="footerContact">Sazināties</a></footer>
+  <footer>
+    <a class="brand footer-brand" href="#top"><img src="buildrefix-logo.png" alt="" width="40" height="40"><span>BUILD<span>REFIX</span></span></a>
+    <p>© <span id="year"></span> BuildReFix</p>
+    <div><a href="#privacy" data-i18n="privacyLink">Privātums</a><a href="https://romanmamrukov.github.io/romanmamrukov/" target="_blank" rel="noopener" data-i18n="aboutLink">Par speciālistu ↗</a></div>
+  </footer>
 </body>
 </html>
