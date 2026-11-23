@@ -1,5 +1,6 @@
 const translations = {
   lv: {
+    localTitle: "Datoru remonts un viedās mājas ierīču uzstādīšana Rīgā", localComputer: "Datoru un portatīvo datoru remonts →", localSmart: "Viedās mājas un robotu putekļsūcēju uzstādīšana →",
     skipLink: "Pāriet uz saturu", menu: "Izvēlne", navIT: "IT atbalsts", navDigital: "Mājaslapas", navWork: "Darbi", navFaq: "BUJ", navContact: "Kontakti", headerCta: "Aprakstīt uzdevumu",
     eyebrow: "Rīga · Vakari un nedēļas nogales · Attālināti visā Latvijā",
     heroTitle: "Salaboju tehniskas problēmas.<br><em>Uzbūvēju praktiskus risinājumus.</em>",
@@ -33,6 +34,7 @@ const translations = {
     privacyTitle: "Privātums un saziņa", privacyText: "Šajā mājaslapā nav kontaktformas, analītikas vai reklāmas sīkdatņu. Valodas izvēle tiek saglabāta tikai jūsu pārlūkā. Sazinoties ar e-pastu vai WhatsApp, dati tiek apstrādāti attiecīgajā pakalpojumā tikai, lai atbildētu uz pieprasījumu un sagatavotu darbu. Nesūtiet paroles; piekļuvi saskaņojam atsevišķi.", privacyLink: "Privātums", aboutLink: "Par speciālistu ↗"
   },
   ru: {
+    localTitle: "Ремонт компьютеров и подключение умных устройств в Риге", localComputer: "Ремонт компьютеров и ноутбуков →", localSmart: "Настройка умного дома и роботов-пылесосов →",
     skipLink: "Перейти к содержанию", menu: "Меню", navIT: "IT-помощь", navDigital: "Сайты", navWork: "Работы", navFaq: "Вопросы", navContact: "Контакты", headerCta: "Описать задачу",
     eyebrow: "Рига · Вечера и выходные · Удалённо по Латвии",
     heroTitle: "Исправляю технические проблемы.<br><em>Создаю практичные решения.</em>",
@@ -66,6 +68,7 @@ const translations = {
     privacyTitle: "Конфиденциальность и связь", privacyText: "На сайте нет контактной формы, аналитики или рекламных cookie. Выбор языка хранится только в вашем браузере. При связи по e-mail или WhatsApp данные обрабатываются соответствующим сервисом только для ответа и подготовки работы. Не отправляйте пароли; доступ согласуем отдельно.", privacyLink: "Конфиденциальность", aboutLink: "О специалисте ↗"
   },
   en: {
+    localTitle: "Computer repair and smart home installation in Riga", localComputer: "Computer and laptop repair →", localSmart: "Smart home and robot vacuum setup →",
     skipLink: "Skip to content", menu: "Menu", navIT: "IT support", navDigital: "Websites", navWork: "Work", navFaq: "FAQ", navContact: "Contact", headerCta: "Describe the task",
     eyebrow: "Riga · Evenings and weekends · Remote across Latvia",
     heroTitle: "I fix technical problems.<br><em>I build practical solutions.</em>",
